@@ -1,0 +1,505 @@
+:root {
+    --lightblue: #00BCD4;
+    --white: rgb(255, 255, 255);
+    --darkwhite: rgb(240, 240, 240);
+    --gray: rgb(197, 197, 197);
+    --cover: rgb(0, 0, 0, 0.8);
+    --orange: rgb(250, 88, 42);
+    --green: rgb(1, 165, 1);
+    --black: rgb(0, 0, 0);
+}
+
+.navbar.bg-blue {
+    background: var(--lightblue);
+}
+
+.navbar.bg-blue .nav-item a {
+    color: var(--darkwhite);
+}
+
+.navbar.bg-blue .nav-item.active a {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.navbar.bg-blue .dropdown-item {
+    color: var(--black) !important;
+}
+
+.navbar.bg-blue .navbar-brand {
+    color: var(--white);
+}
+
+.btn-white {
+    background: var(--white);
+    color: var(--lightblue);
+}
+
+.btn-orange {
+    background: var(--orange);
+    color: white;
+}
+
+.btn-orange:hover {
+    color: white;
+}
+
+@font-face {
+    font-family: iransans;
+    src: url(../font/IRANSansWeb.ttf);
+}
+
+@font-face {
+    font-family: dornika;
+    src: url(../font/dornika.ttf);
+}
+
+.navbar-brand {
+	font-family: dornika;
+}
+
+* {
+    font-family: iransans;
+}
+
+.cover {
+    display: none;
+    background: var(--cover);
+    z-index: 1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-top {
+    background: var(--lightblue);
+    height: 60px;
+    padding-top: 15px;
+}
+
+.nav-top .nav-top-button {
+    color: var(--white);
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0px 5px 0px 5px;
+}
+
+.nav-top .nav-top-logo {
+    color: var(--white);
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.nav-top .nav-top-logo a {
+    font-family: dornika;
+}
+
+.nav-right {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    background: var(--white);
+    height: 100vh;
+    margin-right: -300px;
+    z-index: 2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.nav-right a {
+    text-decoration: none !important;
+    color: var(--black) !important;
+}
+
+.nav-right-setting .nav-right-header {
+    background: var(--lightblue);
+    padding-top: 20px;
+}
+
+.nav-right-setting img {
+    display: block;
+    margin: auto;
+}
+
+.nav-right-setting h2 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+	font-family: dornika;
+}
+
+.nav-right-list {
+    width: 100%;
+    padding: 0px;
+}
+
+.nav-right-list li {
+    cursor: pointer;
+    list-style: none;
+    line-height: 50px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.nav-right-list li:hover {
+    background: var(--darkwhite);
+}
+
+.nav-right-list i {
+    padding: 0px 10px 0px 5px;
+}
+
+.nav-right-setting .nav-right-list li:last-child {
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 0px;
+    border-top: 1px solid var(--gray);
+    width: 100%;
+}
+
+.nav-right-catalog .nav-right-header {
+    background: var(--lightblue);
+    color: var(--white);
+}
+
+.nav-right-catalog h2 {
+    line-height: 60px;
+    font-size: 24px;
+}
+
+.nav-right-catalog i {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-left {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    background: var(--white);
+    height: 100vh;
+    margin-left: -300px;
+    z-index: 2;
+
+}
+
+.nav-left-header {
+    font-size: 18px;
+    color: var(--white);
+    line-height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: var(--lightblue);
+}
+
+.nav-left-header .float-right i {
+    margin-right: 10px;
+}
+
+.nav-left .stuff {
+    height: 90px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.stuff .stuff-name {
+    font-weight: bold;
+}
+
+.stuff .counter {
+    font-size: 18px;
+    float: right;
+    width: 50px;
+    text-align: center;
+
+}
+
+.stuff .info {
+    width: 230px;
+    float: right;
+    vertical-align: center;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.stuff .stuff-box-number {
+    font-size: 14px;
+}
+
+.nav-left .stuff-price {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.nav-left-stuffs {
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100% - 275px);
+    width: 300px;
+}
+
+.nav-left-footer {
+    height: 215px;
+    padding: 15px;
+    position: fixed;
+    width: 300px;
+    bottom: 0px;
+    background: var(--lightblue);
+    color: white;
+}
+
+.client-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-left-table td {
+    padding: 0px;
+}
+
+.posetive,
+.negative {
+    cursor: pointer;
+}
+
+/*LOGIN*/
+.login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--lightblue);
+}
+
+.login-form {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.login-form h2 {
+    color: var(--white);
+    text-align: center;
+    font-family: dornika;
+}
+
+.login-form h2 b {
+    font-family: dornika;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.login-form img {
+    display: block;
+    margin: auto;
+}
+
+.login-form input,
+.login-form button {
+    margin-top: 5px;
+}
+
+/* PROFILE */
+
+.profile {
+    margin-top: 80px;
+}
+
+.profile img {
+    margin: auto;
+    display: block;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.profile h4,
+.profile h6 {
+    text-align: center;
+}
+
+.resume {
+    margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+    .group {
+        background: red;
+        width: 33%;
+        height: 33px;
+    }
+}
+
+/* DASHBORD */
+
+
+.dashbord-tops .stuff img {
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.dashbord-tops .stuff h5 {
+    text-align: center;
+}
+
+.dashbord-tops .stuff h6 {
+    text-align: center;
+    color: var(--gray);
+}
+
+.dashbord-tops .btn {
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.dashbord-info table td {
+    border-bottom: 1px solid var(--gray);
+}
+
+.dashbord-right-nav {
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: auto;
+    border-left: 1px solid var(--gray);
+    right: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.dashbord-top-sub-nav {
+    line-height: 50px;
+    border-bottom: 1px solid var(--gray);
+
+}
+
+.dashbord-top-sub-nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashbord-top-sub-nav ul li {
+    display: inline-block;
+    border-left: 1px solid var(--gray);
+    text-align: center;
+    min-width: 80px;
+    padding:0px;
+    cursor: pointer;
+    list-style: none;
+    list-style-type: none;
+}
+.dashbord-top-sub-nav li:hover {
+   color:var(--lightblue);
+}
+.dashbord-edit-products img{
+    width: 150px;
+    display: block;
+    margin:auto;
+}
+.dashbord-edit-products h5{
+    text-align:center;
+    font-size:18px;
+    margin-top:5px;
+
+}
+.dashbord-edit-products h6{
+    text-align:center;
+    font-size:12px;
+    margin-top:5px;
+  
+    color:var(--gray);
+}
+.dashbord-edit-products .stuff{
+    border:1px solid var(--gray);
+    padding:20px;
+    margin-bottom:15px;
+}
+.dashbord-edit-products .stuff-edit{
+    margin:auto;
+    display: block;
+    width:150px;
+}
+table.table-bordered.dataTable th, table.table-bordered.dataTable td {
+    vertical-align: middle;
+}
+.stuff.changing {
+    opacity: 0.5;
+    cursor: pointer;
+    pointer-events: none;
+}
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    right: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    right: 20px;
+}
+span.node {
+    background: #f1f1f1;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+label.node {
+    margin: 0 !important;
+    font-weight: 100 !important;
+}
+
+.cart-input-label {
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    background: #00bcd4;
+    color: #fff;
+}
